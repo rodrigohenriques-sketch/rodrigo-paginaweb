@@ -46,15 +46,26 @@
              </div>
         </main>
    </body>
-   <script>
-    const botao = document.querySelector("button");
-    botao.addEventListener("click, botaoClicado");
+  <script>
+ document.addEventListener("DOMContentLoaded", function() {
+   const botao = document.querySelector("button");
+   const texto = botao.querySelector("span");
+   
+   let curtido = false;
 
-    function botaoClicado(){
-      console.log("fui clicado");
-      let texto = botao.querySelector("span");
-      texto.textContent++;
-    }
+   botao.addEventListener("click", function() {
+     let contador = Number(texto.textContent);
 
-   </script>
+     if (!curtido) {
+       texto.textContent = contador + 1;
+       curtido = true;
+       botao.style.opacity = "0.7"; // efeito visual opcional de "curtido"
+     } else {
+       texto.textContent = contador - 1;
+       curtido = false;
+       botao.style.opacity = "1";
+     }
+   });
+ });
+</script>
 </html>
