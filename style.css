@@ -1,18 +1,37 @@
+:root{
+   --cor-primario: #05e0e7;
+   --cor-secundario: #0307ee;
+   --cor-fundo: #ffffff;
+   --cor-texto: #050a0a;
+   --cor-contraste: #d2e3e4;
+   --cor-botao: #a1eff1;
+}
+
+.tema-escuro{
+    --cor-primario: #b0f2f5;
+   --cor-secundario: #10f0ca;
+   --cor-fundo: #ffffff;
+   --cor-texto: #070202;
+   --cor-contraste: #d2e3e4;
+   --cor-botao: #053638;
+}
+
+
 body {
   max-width: 100WW;
 }
 
 header {
-      background-color: #05e0e7;
-      color: #FFFFFF;
+      background-color: var(--cor-primario);
+      color: var(--cor-contraste);
       text-align: center;
       margin: 0 auto;
       padding: 16px;
     }
 
   main {
-  background-color: #FFFFFF;
-  color: #32345E;
+  background-color: var(--cor-fundo);
+  color: var(--cor-primario);
   margin: 0 auto;
   padding: 16px;
 
@@ -23,7 +42,7 @@ header {
 
 article {
   display: flex;
-  border: 1px solid #32345E;
+  border: 1px solid var(--cor-primario);
   padding: 16px;
 
  
