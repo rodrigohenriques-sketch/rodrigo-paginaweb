@@ -17,6 +17,18 @@
 }
 
 
+.tema-escuro a{
+  color: var(--cor-secundario);
+}
+
+.tema-escuro p{
+  color: var(--cor-texto);
+}
+
+
+
+
+
 body {
   max-width: 100WW;
 }
